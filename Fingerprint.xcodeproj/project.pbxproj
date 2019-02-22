@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB1B91FD1E8B53360064701F /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B91FC1E8B53360064701F /* SegueFromRight.swift */; };
+		BB4E75FA1EC58AAB0004D092 /* parseJSONString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4E75F91EC58AAB0004D092 /* parseJSONString.swift */; };
+		BB6178391EB2CA640056190C /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6178381EB2CA640056190C /* LocalAuthentication.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		BB61783B1EB2CA9E0056190C /* YLTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61783A1EB2CA9E0056190C /* YLTouchID.swift */; };
+		BB61925F1E914E3C00E9AD86 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61925E1E914E3C00E9AD86 /* SegueFromLeft.swift */; };
+		BB6192631E915F7700E9AD86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6192621E915F7700E9AD86 /* WelcomeViewController.swift */; };
+		BB6A053F1E9A23C700133537 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A053E1E9A23C700133537 /* MenuViewController.swift */; };
+		BB77FBE81E94C9DC009FC254 /* YLServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77FBE71E94C9DC009FC254 /* YLServerConnection.swift */; };
+		BB7B66A01EA992E700A3EAE6 /* YLJailbroken.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B669F1EA992E700A3EAE6 /* YLJailbroken.swift */; };
+		BB8261C61EBBF22C00BADA14 /* YLRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8261C51EBBF22C00BADA14 /* YLRoundButton.swift */; };
+		BB8261CC1EBC064500BADA14 /* PasswordForForgotPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8261CB1EBC064500BADA14 /* PasswordForForgotPin.swift */; };
+		BB8261CF1EBC3ADC00BADA14 /* YLBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8261CE1EBC3ADC00BADA14 /* YLBubbleView.swift */; };
+		BB8261D11EBC579E00BADA14 /* YLServerConnectionStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8261D01EBC579E00BADA14 /* YLServerConnectionStatusCode.swift */; };
+		BB841C6C1EC1E713001D56CF /* YLRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB841C6B1EC1E713001D56CF /* YLRectButton.swift */; };
+		BB841C6E1EC1FF4B001D56CF /* YLCheckmarkAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB841C6D1EC1FF4B001D56CF /* YLCheckmarkAnimation.swift */; };
+		BB841C701EC293EE001D56CF /* YLRoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB841C6F1EC293EE001D56CF /* YLRoundImageView.swift */; };
+		BB841C721EC29AE9001D56CF /* YLRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB841C711EC29AE9001D56CF /* YLRoundView.swift */; };
+		BB841C761EC2D179001D56CF /* YLPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB841C751EC2D179001D56CF /* YLPageTitleView.swift */; };
+		BB841C781EC2D743001D56CF /* YLTopLeftCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB841C771EC2D743001D56CF /* YLTopLeftCornerButton.swift */; };
+		BB841C7A1EC2DBD1001D56CF /* YLTopRightCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB841C791EC2DBD1001D56CF /* YLTopRightCornerButton.swift */; };
+		BB841C7C1EC34235001D56CF /* YLErrorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB841C7B1EC34235001D56CF /* YLErrorLabel.swift */; };
+		BB841C7E1EC360DB001D56CF /* YLActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB841C7D1EC360DB001D56CF /* YLActivityIndicatorAnimationBallPulse.swift */; };
+		BB851FD41EF8BDF9004C1015 /* YLTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB851FD31EF8BDF9004C1015 /* YLTheme.swift */; };
+		BB8604331E888D3E000CC672 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8604321E888D3E000CC672 /* AppDelegate.swift */; };
+		BB8604351E888D3E000CC672 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8604341E888D3E000CC672 /* LoginViewController.swift */; };
+		BB8604381E888D3E000CC672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8604361E888D3E000CC672 /* Main.storyboard */; };
+		BB86043A1E888D3E000CC672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8604391E888D3E000CC672 /* Assets.xcassets */; };
+		BB86043D1E888D3E000CC672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB86043B1E888D3E000CC672 /* LaunchScreen.storyboard */; };
+		BB8604481E888D3E000CC672 /* FingerprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8604471E888D3E000CC672 /* FingerprintTests.swift */; };
+		BB8604531E888D3E000CC672 /* FingerprintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8604521E888D3E000CC672 /* FingerprintUITests.swift */; };
+		BB86AB511EB95CC800837F6C /* YLNetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86AB501EB95CC800837F6C /* YLNetworkType.swift */; };
+		BB86AB531EB966FC00837F6C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86AB521EB966FC00837F6C /* Reachability.swift */; };
+		BB8DC3DC1EA5DED9002F7BBC /* PinRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DC3DB1EA5DED9002F7BBC /* PinRegisterViewController.swift */; };
+		BB8DC3DE1EA5FC6C002F7BBC /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DC3DD1EA5FC6C002F7BBC /* UserProfileViewController.swift */; };
+		BB8DC3E01EA64403002F7BBC /* YLMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DC3DF1EA64403002F7BBC /* YLMenuButton.swift */; };
+		BB8DC3E21EA6EE87002F7BBC /* ManageDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DC3E11EA6EE87002F7BBC /* ManageDevicesViewController.swift */; };
+		BB8DC3E41EA6FA5F002F7BBC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DC3E31EA6FA5F002F7BBC /* AboutViewController.swift */; };
+		BB8DC3E61EA72240002F7BBC /* YLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DC3E51EA72240002F7BBC /* YLTextField.swift */; };
+		BB9B93F71E9A66010023012E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B93F61E9A66010023012E /* ContainerViewController.swift */; };
+		BBAC15001E966CEB00044309 /* PinSetupNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAC14FF1E966CEB00044309 /* PinSetupNotificationViewController.swift */; };
+		BBAC15041E9715D300044309 /* YLShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAC15031E9715D300044309 /* YLShake.swift */; };
+		BBAC15061E975EA700044309 /* YLLogOutClearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAC15051E975EA700044309 /* YLLogOutClearance.swift */; };
+		BBBCFF271EC1635600C75504 /* YLBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCFF261EC1635600C75504 /* YLBackground.swift */; };
+		BBBCFF291EC19BC500C75504 /* YLPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCFF281EC19BC500C75504 /* YLPinViewController.swift */; };
+		BBBF7F2C1EB974FB001868E1 /* YLPhoneCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF7F2B1EB974FB001868E1 /* YLPhoneCarrier.swift */; };
+		BBBF7F6E1EB97A1B001868E1 /* YLLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF7F6D1EB97A1B001868E1 /* YLLocale.swift */; };
+		BBBF7F701EB97CCC001868E1 /* YLMakeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF7F6F1EB97CCC001868E1 /* YLMakeJson.swift */; };
+		BBC3C7ED1EC36B2500CCD8FA /* YLViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3C7EC1EC36B2500CCD8FA /* YLViewShadow.swift */; };
+		BBC3C7EF1EC3E4E900CCD8FA /* YLTableViewForUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3C7EE1EC3E4E900CCD8FA /* YLTableViewForUserProfile.swift */; };
+		BBC3C7F31EC42DE100CCD8FA /* YLTableViewForWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3C7F21EC42DE100CCD8FA /* YLTableViewForWelcome.swift */; };
+		BBC3C7F51EC494D500CCD8FA /* YLShowViewWithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3C7F41EC494D500CCD8FA /* YLShowViewWithAnimation.swift */; };
+		BBC450F71E88C21B00D79E55 /* loginBackground_Gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = BBC450F61E88C21B00D79E55 /* loginBackground_Gif.gif */; };
+		BBC451011E88EBC800D79E55 /* PinAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC451001E88EBC800D79E55 /* PinAuthViewController.swift */; };
+		BBC983091EE9297C00E05BE8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBC983081EE9297C00E05BE8 /* Settings.bundle */; };
+		BBC9830D1EEA2FA300E05BE8 /* YLDefaultApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC9830C1EEA2FA300E05BE8 /* YLDefaultApi.swift */; };
+		BBCB874A1EB758E800477DD3 /* YLActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB87491EB758E800477DD3 /* YLActivityIndicatorView.swift */; };
+		BBCB874C1EB767CB00477DD3 /* YLActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB874B1EB767CB00477DD3 /* YLActivityIndicatorAnimationDelegate.swift */; };
+		BBCB874F1EB7691600477DD3 /* YLActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB874E1EB7691600477DD3 /* YLActivityIndicatorAnimationBlank.swift */; };
+		BBCB87511EB769A600477DD3 /* YLActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB87501EB769A600477DD3 /* YLActivityIndicatorAnimationBallScale.swift */; };
+		BBCB87531EB769DF00477DD3 /* YLActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB87521EB769DF00477DD3 /* YLActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		BBCB87551EB76A2600477DD3 /* YLActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB87541EB76A2600477DD3 /* YLActivityIndicatorShape.swift */; };
+		BBCB87571EB76AAC00477DD3 /* YLActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB87561EB76AAC00477DD3 /* YLActivityIndicatorPresenter.swift */; };
+		BBCB87591EB76AE800477DD3 /* YLActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB87581EB76AE800477DD3 /* YLActivityIndicatorViewable.swift */; };
+		BBCB875C1EB8515C00477DD3 /* YLGeolocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB875B1EB8515C00477DD3 /* YLGeolocation.swift */; };
+		BBCB875F1EB852D500477DD3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCB875E1EB852D500477DD3 /* CoreLocation.framework */; };
+		BBDF922B1E9DCB5800E8A3CF /* SegueFromLeftAllDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDF922A1E9DCB5800E8A3CF /* SegueFromLeftAllDismiss.swift */; };
+		BBDF922F1E9DD48100E8A3CF /* ChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDF922E1E9DD48100E8A3CF /* ChangePinViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB8604441E888D3E000CC672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB8604271E888D3E000CC672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB86042E1E888D3E000CC672;
+			remoteInfo = Fingerprint;
+		};
+		BB86044F1E888D3E000CC672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB8604271E888D3E000CC672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB86042E1E888D3E000CC672;
+			remoteInfo = Fingerprint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB1B91FC1E8B53360064701F /* SegueFromRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
+		BB4E75F91EC58AAB0004D092 /* parseJSONString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseJSONString.swift; sourceTree = "<group>"; };
+		BB6178381EB2CA640056190C /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		BB61783A1EB2CA9E0056190C /* YLTouchID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTouchID.swift; sourceTree = "<group>"; };
+		BB61925E1E914E3C00E9AD86 /* SegueFromLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
+		BB6192621E915F7700E9AD86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BB6A053E1E9A23C700133537 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BB77FBE71E94C9DC009FC254 /* YLServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLServerConnection.swift; sourceTree = "<group>"; };
+		BB7B669F1EA992E700A3EAE6 /* YLJailbroken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLJailbroken.swift; sourceTree = "<group>"; };
+		BB8261C51EBBF22C00BADA14 /* YLRoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLRoundButton.swift; sourceTree = "<group>"; };
+		BB8261CB1EBC064500BADA14 /* PasswordForForgotPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordForForgotPin.swift; sourceTree = "<group>"; };
+		BB8261CE1EBC3ADC00BADA14 /* YLBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLBubbleView.swift; sourceTree = "<group>"; };
+		BB8261D01EBC579E00BADA14 /* YLServerConnectionStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLServerConnectionStatusCode.swift; sourceTree = "<group>"; };
+		BB841C6B1EC1E713001D56CF /* YLRectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLRectButton.swift; sourceTree = "<group>"; };
+		BB841C6D1EC1FF4B001D56CF /* YLCheckmarkAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLCheckmarkAnimation.swift; sourceTree = "<group>"; };
+		BB841C6F1EC293EE001D56CF /* YLRoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLRoundImageView.swift; sourceTree = "<group>"; };
+		BB841C711EC29AE9001D56CF /* YLRoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLRoundView.swift; sourceTree = "<group>"; };
+		BB841C751EC2D179001D56CF /* YLPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLPageTitleView.swift; sourceTree = "<group>"; };
+		BB841C771EC2D743001D56CF /* YLTopLeftCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTopLeftCornerButton.swift; sourceTree = "<group>"; };
+		BB841C791EC2DBD1001D56CF /* YLTopRightCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTopRightCornerButton.swift; sourceTree = "<group>"; };
+		BB841C7B1EC34235001D56CF /* YLErrorLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLErrorLabel.swift; sourceTree = "<group>"; };
+		BB841C7D1EC360DB001D56CF /* YLActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		BB851FD31EF8BDF9004C1015 /* YLTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTheme.swift; sourceTree = "<group>"; };
+		BB8604321E888D3E000CC672 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB8604341E888D3E000CC672 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BB8604371E888D3E000CC672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB8604391E888D3E000CC672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB86043C1E888D3E000CC672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB86043E1E888D3E000CC672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8604471E888D3E000CC672 /* FingerprintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerprintTests.swift; sourceTree = "<group>"; };
+		BB8604491E888D3E000CC672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8604521E888D3E000CC672 /* FingerprintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerprintUITests.swift; sourceTree = "<group>"; };
+		BB8604541E888D3E000CC672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB86AB501EB95CC800837F6C /* YLNetworkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNetworkType.swift; sourceTree = "<group>"; };
+		BB86AB521EB966FC00837F6C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BB8DC3DB1EA5DED9002F7BBC /* PinRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinRegisterViewController.swift; sourceTree = "<group>"; };
+		BB8DC3DD1EA5FC6C002F7BBC /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		BB8DC3DF1EA64403002F7BBC /* YLMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLMenuButton.swift; sourceTree = "<group>"; };
+		BB8DC3E11EA6EE87002F7BBC /* ManageDevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageDevicesViewController.swift; sourceTree = "<group>"; };
+		BB8DC3E31EA6FA5F002F7BBC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		BB8DC3E51EA72240002F7BBC /* YLTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTextField.swift; sourceTree = "<group>"; };
+		BB9B93F61E9A66010023012E /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		BBAC14FF1E966CEB00044309 /* PinSetupNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinSetupNotificationViewController.swift; sourceTree = "<group>"; };
+		BBAC15031E9715D300044309 /* YLShake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLShake.swift; sourceTree = "<group>"; };
+		BBAC15051E975EA700044309 /* YLLogOutClearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLLogOutClearance.swift; sourceTree = "<group>"; };
+		BBB456561EB6E38100B63D67 /* Fingerprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fingerprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB456571EB6E38100B63D67 /* FingerprintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingerprintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB456581EB6E38100B63D67 /* FingerprintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingerprintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBCFF261EC1635600C75504 /* YLBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLBackground.swift; sourceTree = "<group>"; };
+		BBBCFF281EC19BC500C75504 /* YLPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLPinViewController.swift; sourceTree = "<group>"; };
+		BBBF7F2B1EB974FB001868E1 /* YLPhoneCarrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLPhoneCarrier.swift; sourceTree = "<group>"; };
+		BBBF7F6D1EB97A1B001868E1 /* YLLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLLocale.swift; sourceTree = "<group>"; };
+		BBBF7F6F1EB97CCC001868E1 /* YLMakeJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLMakeJson.swift; sourceTree = "<group>"; };
+		BBC3C7EC1EC36B2500CCD8FA /* YLViewShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLViewShadow.swift; sourceTree = "<group>"; };
+		BBC3C7EE1EC3E4E900CCD8FA /* YLTableViewForUserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTableViewForUserProfile.swift; sourceTree = "<group>"; };
+		BBC3C7F21EC42DE100CCD8FA /* YLTableViewForWelcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTableViewForWelcome.swift; sourceTree = "<group>"; };
+		BBC3C7F41EC494D500CCD8FA /* YLShowViewWithAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLShowViewWithAnimation.swift; sourceTree = "<group>"; };
+		BBC450F61E88C21B00D79E55 /* loginBackground_Gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loginBackground_Gif.gif; sourceTree = "<group>"; };
+		BBC451001E88EBC800D79E55 /* PinAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAuthViewController.swift; sourceTree = "<group>"; };
+		BBC983081EE9297C00E05BE8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		BBC9830C1EEA2FA300E05BE8 /* YLDefaultApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLDefaultApi.swift; sourceTree = "<group>"; };
+		BBCB87491EB758E800477DD3 /* YLActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLActivityIndicatorView.swift; sourceTree = "<group>"; };
+		BBCB874B1EB767CB00477DD3 /* YLActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		BBCB874E1EB7691600477DD3 /* YLActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		BBCB87501EB769A600477DD3 /* YLActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		BBCB87521EB769DF00477DD3 /* YLActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		BBCB87541EB76A2600477DD3 /* YLActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		BBCB87561EB76AAC00477DD3 /* YLActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
+		BBCB87581EB76AE800477DD3 /* YLActivityIndicatorViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLActivityIndicatorViewable.swift; sourceTree = "<group>"; };
+		BBCB875A1EB76B2000477DD3 /* YLActivityIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLActivityIndicatorView.h; sourceTree = "<group>"; };
+		BBCB875B1EB8515C00477DD3 /* YLGeolocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLGeolocation.swift; sourceTree = "<group>"; };
+		BBCB875E1EB852D500477DD3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BBDF922A1E9DCB5800E8A3CF /* SegueFromLeftAllDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromLeftAllDismiss.swift; sourceTree = "<group>"; };
+		BBDF922E1E9DD48100E8A3CF /* ChangePinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePinViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB86042C1E888D3E000CC672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCB875F1EB852D500477DD3 /* CoreLocation.framework in Frameworks */,
+				BB6178391EB2CA640056190C /* LocalAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8604401E888D3E000CC672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB86044B1E888D3E000CC672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB6178371EB2CA640056190C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBCB875E1EB852D500477DD3 /* CoreLocation.framework */,
+				BB6178381EB2CA640056190C /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB8261C71EBBF58B00BADA14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBAC15031E9715D300044309 /* YLShake.swift */,
+				BB8DC3DF1EA64403002F7BBC /* YLMenuButton.swift */,
+				BB8DC3E51EA72240002F7BBC /* YLTextField.swift */,
+				BB8261C51EBBF22C00BADA14 /* YLRoundButton.swift */,
+				BB841C6B1EC1E713001D56CF /* YLRectButton.swift */,
+				BB8261CE1EBC3ADC00BADA14 /* YLBubbleView.swift */,
+				BBBCFF261EC1635600C75504 /* YLBackground.swift */,
+				BBBCFF281EC19BC500C75504 /* YLPinViewController.swift */,
+				BB841C6D1EC1FF4B001D56CF /* YLCheckmarkAnimation.swift */,
+				BB841C6F1EC293EE001D56CF /* YLRoundImageView.swift */,
+				BB841C711EC29AE9001D56CF /* YLRoundView.swift */,
+				BB841C751EC2D179001D56CF /* YLPageTitleView.swift */,
+				BB841C771EC2D743001D56CF /* YLTopLeftCornerButton.swift */,
+				BB841C791EC2DBD1001D56CF /* YLTopRightCornerButton.swift */,
+				BB841C7B1EC34235001D56CF /* YLErrorLabel.swift */,
+				BBC3C7EC1EC36B2500CCD8FA /* YLViewShadow.swift */,
+				BBC3C7EE1EC3E4E900CCD8FA /* YLTableViewForUserProfile.swift */,
+				BBC3C7F21EC42DE100CCD8FA /* YLTableViewForWelcome.swift */,
+				BBC3C7F41EC494D500CCD8FA /* YLShowViewWithAnimation.swift */,
+				BBCB87481EB757DC00477DD3 /* YLActivityIndicatorView */,
+				BB851FD31EF8BDF9004C1015 /* YLTheme.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BB8261C81EBBF5D600BADA14 /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				BB1B91FC1E8B53360064701F /* SegueFromRight.swift */,
+				BB61925E1E914E3C00E9AD86 /* SegueFromLeft.swift */,
+				BBDF922A1E9DCB5800E8A3CF /* SegueFromLeftAllDismiss.swift */,
+			);
+			name = Segue;
+			sourceTree = "<group>";
+		};
+		BB8261CA1EBBF6B300BADA14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBCB875D1EB8518A00477DD3 /* YLMakeJson */,
+				BBAC15051E975EA700044309 /* YLLogOutClearance.swift */,
+				BB61783A1EB2CA9E0056190C /* YLTouchID.swift */,
+				BB77FBE71E94C9DC009FC254 /* YLServerConnection.swift */,
+				BB8261D01EBC579E00BADA14 /* YLServerConnectionStatusCode.swift */,
+				BB4E75F91EC58AAB0004D092 /* parseJSONString.swift */,
+				BBC9830C1EEA2FA300E05BE8 /* YLDefaultApi.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BB8261CD1EBC2DE400BADA14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB8604341E888D3E000CC672 /* LoginViewController.swift */,
+				BB8DC3DB1EA5DED9002F7BBC /* PinRegisterViewController.swift */,
+				BBC451001E88EBC800D79E55 /* PinAuthViewController.swift */,
+				BBAC14FF1E966CEB00044309 /* PinSetupNotificationViewController.swift */,
+				BB8261CB1EBC064500BADA14 /* PasswordForForgotPin.swift */,
+				BB9B93F61E9A66010023012E /* ContainerViewController.swift */,
+				BB6A053E1E9A23C700133537 /* MenuViewController.swift */,
+				BB6192621E915F7700E9AD86 /* WelcomeViewController.swift */,
+				BB8DC3DD1EA5FC6C002F7BBC /* UserProfileViewController.swift */,
+				BBDF922E1E9DD48100E8A3CF /* ChangePinViewController.swift */,
+				BB8DC3E11EA6EE87002F7BBC /* ManageDevicesViewController.swift */,
+				BB8DC3E31EA6FA5F002F7BBC /* AboutViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BB8604261E888D3E000CC672 = {
+			isa = PBXGroup;
+			children = (
+				BB8604311E888D3E000CC672 /* Fingerprint */,
+				BB8604461E888D3E000CC672 /* FingerprintTests */,
+				BB8604511E888D3E000CC672 /* FingerprintUITests */,
+				BB6178371EB2CA640056190C /* Frameworks */,
+				BBB456561EB6E38100B63D67 /* Fingerprint.app */,
+				BBB456571EB6E38100B63D67 /* FingerprintTests.xctest */,
+				BBB456581EB6E38100B63D67 /* FingerprintUITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		BB8604311E888D3E000CC672 /* Fingerprint */ = {
+			isa = PBXGroup;
+			children = (
+				BB8604321E888D3E000CC672 /* AppDelegate.swift */,
+				BBC983081EE9297C00E05BE8 /* Settings.bundle */,
+				BB8261CD1EBC2DE400BADA14 /* Controller */,
+				BB8604361E888D3E000CC672 /* Main.storyboard */,
+				BB8604391E888D3E000CC672 /* Assets.xcassets */,
+				BBC450F61E88C21B00D79E55 /* loginBackground_Gif.gif */,
+				BB86043B1E888D3E000CC672 /* LaunchScreen.storyboard */,
+				BB86043E1E888D3E000CC672 /* Info.plist */,
+				BB8261C71EBBF58B00BADA14 /* View */,
+				BB8261CA1EBBF6B300BADA14 /* Model */,
+				BB8261C81EBBF5D600BADA14 /* Segue */,
+			);
+			path = Fingerprint;
+			sourceTree = "<group>";
+		};
+		BB8604461E888D3E000CC672 /* FingerprintTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB8604471E888D3E000CC672 /* FingerprintTests.swift */,
+				BB8604491E888D3E000CC672 /* Info.plist */,
+			);
+			path = FingerprintTests;
+			sourceTree = "<group>";
+		};
+		BB8604511E888D3E000CC672 /* FingerprintUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB8604521E888D3E000CC672 /* FingerprintUITests.swift */,
+				BB8604541E888D3E000CC672 /* Info.plist */,
+			);
+			path = FingerprintUITests;
+			sourceTree = "<group>";
+		};
+		BB86AB541EB96B9A00837F6C /* YLNetworkType */ = {
+			isa = PBXGroup;
+			children = (
+				BB86AB501EB95CC800837F6C /* YLNetworkType.swift */,
+				BB86AB521EB966FC00837F6C /* Reachability.swift */,
+			);
+			name = YLNetworkType;
+			sourceTree = "<group>";
+		};
+		BBCB87481EB757DC00477DD3 /* YLActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				BBCB87491EB758E800477DD3 /* YLActivityIndicatorView.swift */,
+				BBCB874B1EB767CB00477DD3 /* YLActivityIndicatorAnimationDelegate.swift */,
+				BBCB87541EB76A2600477DD3 /* YLActivityIndicatorShape.swift */,
+				BBCB87561EB76AAC00477DD3 /* YLActivityIndicatorPresenter.swift */,
+				BBCB87581EB76AE800477DD3 /* YLActivityIndicatorViewable.swift */,
+				BBCB875A1EB76B2000477DD3 /* YLActivityIndicatorView.h */,
+				BBCB874D1EB7690600477DD3 /* YLAnimation */,
+			);
+			name = YLActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		BBCB874D1EB7690600477DD3 /* YLAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BBCB874E1EB7691600477DD3 /* YLActivityIndicatorAnimationBlank.swift */,
+				BBCB87501EB769A600477DD3 /* YLActivityIndicatorAnimationBallScale.swift */,
+				BBCB87521EB769DF00477DD3 /* YLActivityIndicatorAnimationBallScaleMultiple.swift */,
+				BB841C7D1EC360DB001D56CF /* YLActivityIndicatorAnimationBallPulse.swift */,
+			);
+			name = YLAnimation;
+			sourceTree = "<group>";
+		};
+		BBCB875D1EB8518A00477DD3 /* YLMakeJson */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF7F6F1EB97CCC001868E1 /* YLMakeJson.swift */,
+				BB7B669F1EA992E700A3EAE6 /* YLJailbroken.swift */,
+				BBCB875B1EB8515C00477DD3 /* YLGeolocation.swift */,
+				BB86AB541EB96B9A00837F6C /* YLNetworkType */,
+				BBBF7F2B1EB974FB001868E1 /* YLPhoneCarrier.swift */,
+				BBBF7F6D1EB97A1B001868E1 /* YLLocale.swift */,
+			);
+			name = YLMakeJson;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB86042E1E888D3E000CC672 /* Fingerprint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8604571E888D3E000CC672 /* Build configuration list for PBXNativeTarget "Fingerprint" */;
+			buildPhases = (
+				BB86042B1E888D3E000CC672 /* Sources */,
+				BB86042C1E888D3E000CC672 /* Frameworks */,
+				BB86042D1E888D3E000CC672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fingerprint;
+			productName = Fingerprint;
+			productReference = BBB456561EB6E38100B63D67 /* Fingerprint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB8604421E888D3E000CC672 /* FingerprintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB86045A1E888D3E000CC672 /* Build configuration list for PBXNativeTarget "FingerprintTests" */;
+			buildPhases = (
+				BB86043F1E888D3E000CC672 /* Sources */,
+				BB8604401E888D3E000CC672 /* Frameworks */,
+				BB8604411E888D3E000CC672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8604451E888D3E000CC672 /* PBXTargetDependency */,
+			);
+			name = FingerprintTests;
+			productName = FingerprintTests;
+			productReference = BBB456571EB6E38100B63D67 /* FingerprintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB86044D1E888D3E000CC672 /* FingerprintUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB86045D1E888D3E000CC672 /* Build configuration list for PBXNativeTarget "FingerprintUITests" */;
+			buildPhases = (
+				BB86044A1E888D3E000CC672 /* Sources */,
+				BB86044B1E888D3E000CC672 /* Frameworks */,
+				BB86044C1E888D3E000CC672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8604501E888D3E000CC672 /* PBXTargetDependency */,
+			);
+			name = FingerprintUITests;
+			productName = FingerprintUITests;
+			productReference = BBB456581EB6E38100B63D67 /* FingerprintUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB8604271E888D3E000CC672 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "yannian liu";
+				TargetAttributes = {
+					BB86042E1E888D3E000CC672 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 76MU8QUQ45;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					BB8604421E888D3E000CC672 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB86042E1E888D3E000CC672;
+					};
+					BB86044D1E888D3E000CC672 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB86042E1E888D3E000CC672;
+					};
+				};
+			};
+			buildConfigurationList = BB86042A1E888D3E000CC672 /* Build configuration list for PBXProject "Fingerprint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB8604261E888D3E000CC672;
+			productRefGroup = BB8604261E888D3E000CC672;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB86042E1E888D3E000CC672 /* Fingerprint */,
+				BB8604421E888D3E000CC672 /* FingerprintTests */,
+				BB86044D1E888D3E000CC672 /* FingerprintUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB86042D1E888D3E000CC672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB86043D1E888D3E000CC672 /* LaunchScreen.storyboard in Resources */,
+				BBC450F71E88C21B00D79E55 /* loginBackground_Gif.gif in Resources */,
+				BB86043A1E888D3E000CC672 /* Assets.xcassets in Resources */,
+				BB8604381E888D3E000CC672 /* Main.storyboard in Resources */,
+				BBC983091EE9297C00E05BE8 /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8604411E888D3E000CC672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB86044C1E888D3E000CC672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB86042B1E888D3E000CC672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCB87551EB76A2600477DD3 /* YLActivityIndicatorShape.swift in Sources */,
+				BBCB87591EB76AE800477DD3 /* YLActivityIndicatorViewable.swift in Sources */,
+				BBBCFF271EC1635600C75504 /* YLBackground.swift in Sources */,
+				BBC9830D1EEA2FA300E05BE8 /* YLDefaultApi.swift in Sources */,
+				BB841C7A1EC2DBD1001D56CF /* YLTopRightCornerButton.swift in Sources */,
+				BB841C7C1EC34235001D56CF /* YLErrorLabel.swift in Sources */,
+				BBC3C7F31EC42DE100CCD8FA /* YLTableViewForWelcome.swift in Sources */,
+				BB61783B1EB2CA9E0056190C /* YLTouchID.swift in Sources */,
+				BBCB875C1EB8515C00477DD3 /* YLGeolocation.swift in Sources */,
+				BBC3C7ED1EC36B2500CCD8FA /* YLViewShadow.swift in Sources */,
+				BB6192631E915F7700E9AD86 /* WelcomeViewController.swift in Sources */,
+				BB8604351E888D3E000CC672 /* LoginViewController.swift in Sources */,
+				BBBF7F6E1EB97A1B001868E1 /* YLLocale.swift in Sources */,
+				BB9B93F71E9A66010023012E /* ContainerViewController.swift in Sources */,
+				BBDF922F1E9DD48100E8A3CF /* ChangePinViewController.swift in Sources */,
+				BB8DC3E21EA6EE87002F7BBC /* ManageDevicesViewController.swift in Sources */,
+				BBBF7F2C1EB974FB001868E1 /* YLPhoneCarrier.swift in Sources */,
+				BB841C761EC2D179001D56CF /* YLPageTitleView.swift in Sources */,
+				BBAC15041E9715D300044309 /* YLShake.swift in Sources */,
+				BB8DC3DE1EA5FC6C002F7BBC /* UserProfileViewController.swift in Sources */,
+				BB851FD41EF8BDF9004C1015 /* YLTheme.swift in Sources */,
+				BB8261D11EBC579E00BADA14 /* YLServerConnectionStatusCode.swift in Sources */,
+				BBAC15001E966CEB00044309 /* PinSetupNotificationViewController.swift in Sources */,
+				BB8DC3DC1EA5DED9002F7BBC /* PinRegisterViewController.swift in Sources */,
+				BBCB874C1EB767CB00477DD3 /* YLActivityIndicatorAnimationDelegate.swift in Sources */,
+				BB6A053F1E9A23C700133537 /* MenuViewController.swift in Sources */,
+				BBC3C7EF1EC3E4E900CCD8FA /* YLTableViewForUserProfile.swift in Sources */,
+				BB4E75FA1EC58AAB0004D092 /* parseJSONString.swift in Sources */,
+				BB841C6E1EC1FF4B001D56CF /* YLCheckmarkAnimation.swift in Sources */,
+				BB841C7E1EC360DB001D56CF /* YLActivityIndicatorAnimationBallPulse.swift in Sources */,
+				BB8261CC1EBC064500BADA14 /* PasswordForForgotPin.swift in Sources */,
+				BB8604331E888D3E000CC672 /* AppDelegate.swift in Sources */,
+				BB7B66A01EA992E700A3EAE6 /* YLJailbroken.swift in Sources */,
+				BB8DC3E01EA64403002F7BBC /* YLMenuButton.swift in Sources */,
+				BBCB874F1EB7691600477DD3 /* YLActivityIndicatorAnimationBlank.swift in Sources */,
+				BB77FBE81E94C9DC009FC254 /* YLServerConnection.swift in Sources */,
+				BB1B91FD1E8B53360064701F /* SegueFromRight.swift in Sources */,
+				BB8261CF1EBC3ADC00BADA14 /* YLBubbleView.swift in Sources */,
+				BB841C721EC29AE9001D56CF /* YLRoundView.swift in Sources */,
+				BBCB87511EB769A600477DD3 /* YLActivityIndicatorAnimationBallScale.swift in Sources */,
+				BB8DC3E41EA6FA5F002F7BBC /* AboutViewController.swift in Sources */,
+				BBBF7F701EB97CCC001868E1 /* YLMakeJson.swift in Sources */,
+				BB8DC3E61EA72240002F7BBC /* YLTextField.swift in Sources */,
+				BBCB874A1EB758E800477DD3 /* YLActivityIndicatorView.swift in Sources */,
+				BB841C6C1EC1E713001D56CF /* YLRectButton.swift in Sources */,
+				BB86AB511EB95CC800837F6C /* YLNetworkType.swift in Sources */,
+				BB86AB531EB966FC00837F6C /* Reachability.swift in Sources */,
+				BB841C701EC293EE001D56CF /* YLRoundImageView.swift in Sources */,
+				BBCB87531EB769DF00477DD3 /* YLActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				BB61925F1E914E3C00E9AD86 /* SegueFromLeft.swift in Sources */,
+				BB8261C61EBBF22C00BADA14 /* YLRoundButton.swift in Sources */,
+				BBC3C7F51EC494D500CCD8FA /* YLShowViewWithAnimation.swift in Sources */,
+				BBBCFF291EC19BC500C75504 /* YLPinViewController.swift in Sources */,
+				BBAC15061E975EA700044309 /* YLLogOutClearance.swift in Sources */,
+				BBCB87571EB76AAC00477DD3 /* YLActivityIndicatorPresenter.swift in Sources */,
+				BBDF922B1E9DCB5800E8A3CF /* SegueFromLeftAllDismiss.swift in Sources */,
+				BB841C781EC2D743001D56CF /* YLTopLeftCornerButton.swift in Sources */,
+				BBC451011E88EBC800D79E55 /* PinAuthViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB86043F1E888D3E000CC672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8604481E888D3E000CC672 /* FingerprintTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB86044A1E888D3E000CC672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8604531E888D3E000CC672 /* FingerprintUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB8604451E888D3E000CC672 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB86042E1E888D3E000CC672 /* Fingerprint */;
+			targetProxy = BB8604441E888D3E000CC672 /* PBXContainerItemProxy */;
+		};
+		BB8604501E888D3E000CC672 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB86042E1E888D3E000CC672 /* Fingerprint */;
+			targetProxy = BB86044F1E888D3E000CC672 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB8604361E888D3E000CC672 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8604371E888D3E000CC672 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB86043B1E888D3E000CC672 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB86043C1E888D3E000CC672 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB8604551E888D3E000CC672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yannian Liu (76MU8QUQ45)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yannian Liu (76MU8QUQ45)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "197f1581-304f-43eb-a504-2817dad100c7";
+				PROVISIONING_PROFILE_SPECIFIER = MyBankCyberincProvisioningProfile20170621;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB8604561E888D3E000CC672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yannian Liu (76MU8QUQ45)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yannian Liu (76MU8QUQ45)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "197f1581-304f-43eb-a504-2817dad100c7";
+				PROVISIONING_PROFILE_SPECIFIER = MyBankCyberincProvisioningProfile20170621;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB8604581E888D3E000CC672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yannian Liu (76MU8QUQ45)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yannian Liu (76MU8QUQ45)";
+				DEVELOPMENT_TEAM = 76MU8QUQ45;
+				INFOPLIST_FILE = Fingerprint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannianliu.MyBankCyberinc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6a67e2fc-3a54-4723-88a3-ab729b8518f8";
+				PROVISIONING_PROFILE_SPECIFIER = MyBankCyberincProvisioningProfile20170927;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB8604591E888D3E000CC672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yannian Liu (76MU8QUQ45)";
+				DEVELOPMENT_TEAM = 76MU8QUQ45;
+				INFOPLIST_FILE = Fingerprint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannianliu.MyBankCyberinc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6a67e2fc-3a54-4723-88a3-ab729b8518f8";
+				PROVISIONING_PROFILE_SPECIFIER = MyBankCyberincProvisioningProfile20170927;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB86045B1E888D3E000CC672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FingerprintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ios-iphone.FingerprintTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fingerprint.app/Fingerprint";
+			};
+			name = Debug;
+		};
+		BB86045C1E888D3E000CC672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FingerprintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ios-iphone.FingerprintTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fingerprint.app/Fingerprint";
+			};
+			name = Release;
+		};
+		BB86045E1E888D3E000CC672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FingerprintUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ios-iphone.FingerprintUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Fingerprint;
+			};
+			name = Debug;
+		};
+		BB86045F1E888D3E000CC672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FingerprintUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ios-iphone.FingerprintUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Fingerprint;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB86042A1E888D3E000CC672 /* Build configuration list for PBXProject "Fingerprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8604551E888D3E000CC672 /* Debug */,
+				BB8604561E888D3E000CC672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8604571E888D3E000CC672 /* Build configuration list for PBXNativeTarget "Fingerprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8604581E888D3E000CC672 /* Debug */,
+				BB8604591E888D3E000CC672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB86045A1E888D3E000CC672 /* Build configuration list for PBXNativeTarget "FingerprintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB86045B1E888D3E000CC672 /* Debug */,
+				BB86045C1E888D3E000CC672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB86045D1E888D3E000CC672 /* Build configuration list for PBXNativeTarget "FingerprintUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB86045E1E888D3E000CC672 /* Debug */,
+				BB86045F1E888D3E000CC672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB8604271E888D3E000CC672 /* Project object */;
+}
